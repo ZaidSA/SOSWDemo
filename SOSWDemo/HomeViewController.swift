@@ -1,0 +1,40 @@
+//
+//  HomeViewController.swift
+//  SOSWDemo
+//
+//  Created by zaid.pathan on 16/01/17.
+//  Copyright © 2017 zaid. All rights reserved.
+//
+
+import UIKit
+
+class HomeViewController: UIViewController {
+
+    @IBAction func goToTabBarController(_ sender: Any) {
+        let tabBarVC = storyboard?.instantiateViewController(withIdentifier: "TabBarController")
+        self.navigationController?.pushViewController(tabBarVC!, animated: true)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
